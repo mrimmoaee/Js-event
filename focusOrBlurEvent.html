@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function onFocus() {
+        document.getElementById("messE").innerHTML =
+          "Product codes start with a letter followed by 3 digits.";
+      }
+
+      function onBlur() {
+        // onBlur message will removed
+        document.getElementById("messE").innerHTML = "On Blur Message";
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Focus and Blur Events</h1>
+    <label>Enter product code: </label>
+    <input type="text" id="prodCode" onfocus="onFocus()" onblur="onBlur()" />
+    <p id="messE"></p>
+  </body>
+</html>

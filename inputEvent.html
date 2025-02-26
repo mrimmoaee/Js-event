@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function showInputValue(inputId) {
+        const value = document.getElementById(inputId).value;
+        alert("You typed: " + value);
+      }
+
+      function showSelectedValue() {
+        const value = document.getElementById("mySelect").value;
+        alert("You selected: " + value);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Input and Change Events</h1>
+
+    <label>Type something (oninput): </label>
+    <input
+      type="text"
+      id="myIn1"
+      oninput="showInputValue('myIn1')"
+    /><br /><br />
+
+    <label>Type something (onchange): </label>
+    <input
+      type="text"
+      id="myIn2"
+      onchange="showInputValue('myIn2')"
+    /><br /><br />
+
+    <label>Select an option: </label>
+    <select id="mySelect" onchange="showSelectedValue()">
+      <option value="apple">Apple</option>
+      <option value="orange">Orange</option>
+      <option value="pear">Pear</option>
+    </select>
+  </body>
+</html>

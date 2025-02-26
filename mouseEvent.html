@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function mOver() {
+        document.getElementById("mEvent").innerHTML = "Mouse Over";
+      }
+
+      function mOut() {
+        document.getElementById("mEvent").innerHTML = "Mouse Out";
+      }
+    </script>
+    <style>
+      .testDiv {
+        position: absolute;
+        background-color: lightblue;
+        top: 150px;
+        left: 150px;
+        height: 150px;
+        width: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Mouse Events</h1>
+    <p id="mEvent"></p>
+    <div class="testDiv" onmouseover="mOver()" onmouseout="mOut()"></div>
+  </body>
+</html>

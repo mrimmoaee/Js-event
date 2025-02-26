@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Event Example</title>
+    <script>
+      // function handleClick(event) {
+      //   // event.target is the element that was clicked
+      //   alert("You clicked on: " + event);
+      //   // console.log({ event });
+      // }
+
+      function handleClick(event) {
+        alert("You clicked on: " + event);
+        console.log({ event });
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="handleClick(event)">Click Me</button>
+    <button onclick="handleClick(8)">Click Me Second Btn</button>
+    <!-- <input onclick="handleClick(event)" /> -->
+    <!-- <button onclick="handleClick(event)">Click Me</button> -->
+  </body>
+</html>
