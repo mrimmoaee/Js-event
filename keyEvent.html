@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keypress vs Keyup Example</title>
+    <script>
+      function handleKeypress(event) {
+        console.log("Keypress Event: " + event.key);
+      }
+
+      function handleKeyup(event) {
+        console.log("Keyup Event: " + event.key);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Keypress vs Keyup Example</h1>
+    <p>Type in the input box and observe the console logs.</p>
+    <input
+      type="text"
+      onkeypress="handleKeypress(event)"
+      onkeyup="handleKeyup(event)"
+      placeholder="Type here"
+    />
+  </body>
+</html>
